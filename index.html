@@ -232,11 +232,11 @@
             </div>
             
             <div class="flex flex-wrap justify-center gap-4 mb-10">
-                <button class="px-6 py-2 bg-primary text-white rounded-full hover:bg-primary-dark transition-colors">All</button>
-                <button class="px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors">Men's</button>
-                <button class="px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors">Women's</button>
-                <button class="px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors">Bestsellers</button>
-                <button class="px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors">Under $50</button>
+                <button class="filter-button px-6 py-2 bg-primary text-white rounded-full hover:bg-primary-dark transition-colors">All</button>
+                <button class="filter-button px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors">Men's</button>
+                <button class="filter-button px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors">Women's</button>
+                <button class="filter-button px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors">Bestsellers</button>
+                <button class="filter-button px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors">Under $50</button>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -370,8 +370,44 @@
                         <span class="text-lg font-semibold text-primary">Can I use my FSA/HSA for glasses?</span>
                         <i class="fas fa-chevron-down text-primary transition-transform"></i>
                     </div>
-                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
-                        <p class="p-6 pt-0 text-gray-600">
+                    <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height: 0; padding: 0 1.5rem;">
+                        <p class="pb-6 text-gray-600">
+                            Yes! Prescription glasses and sunglasses are eligible FSA/HSA expenses. All products on 39dollarglasses.com automatically qualify when you have a valid prescription.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mb-4 bg-white rounded-xl shadow-lg overflow-hidden faq-item">
+                    <div class="p-6 cursor-pointer flex justify-between items-center bg-light-blue hover:bg-blue-100 transition-colors faq-question">
+                        <span class="text-lg font-semibold text-primary">How does Flex Payments work?</span>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height: 0; padding: 0 1.5rem;">
+                        <p class="pb-6 text-gray-600">
+                            Flex Payments is our seamless checkout system that instantly verifies your FSA/HSA card. Simply enter your card details at checkout like any regular purchase – no additional steps, forms, or waiting for approval.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mb-4 bg-white rounded-xl shadow-lg overflow-hidden faq-item">
+                    <div class="p-6 cursor-pointer flex justify-between items-center bg-light-blue hover:bg-blue-100 transition-colors faq-question">
+                        <span class="text-lg font-semibold text-primary">Are prescription sunglasses covered?</span>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height: 0; padding: 0 1.5rem;">
+                        <p class="pb-6 text-gray-600">
+                            Absolutely! Prescription sunglasses are fully FSA/HSA eligible. Protect your eyes from UV rays while using your pre-tax dollars.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mb-4 bg-white rounded-xl shadow-lg overflow-hidden faq-item">
+                    <div class="p-6 cursor-pointer flex justify-between items-center bg-light-blue hover:bg-blue-100 transition-colors faq-question">
+                        <span class="text-lg font-semibold text-primary">Do I need to submit receipts?</span>
+                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
+                    </div>
+                    <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height: 0; padding: 0 1.5rem;">
+                        <p class="pb-6 text-gray-600">
                             No! With Flex Payments, everything is handled automatically at checkout. We'll email you a detailed receipt for your records, but you won't need to submit any paperwork to your FSA/HSA administrator.
                         </p>
                     </div>
@@ -382,8 +418,8 @@
                         <span class="text-lg font-semibold text-primary">What's the deadline to use my FSA?</span>
                         <i class="fas fa-chevron-down text-primary transition-transform"></i>
                     </div>
-                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
-                        <p class="p-6 pt-0 text-gray-600">
+                    <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height: 0; padding: 0 1.5rem;">
+                        <p class="pb-6 text-gray-600">
                             Orders must be placed by 11:59 PM ET on December 31. Shipping delays won't affect eligibility!
                         </p>
                     </div>
@@ -649,40 +685,4 @@
         });
     </script>
 </body>
-</html> pt-0 text-gray-600">
-                            Yes! Prescription glasses and sunglasses are eligible FSA/HSA expenses. All products on 39dollarglasses.com automatically qualify when you have a valid prescription.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mb-4 bg-white rounded-xl shadow-lg overflow-hidden faq-item">
-                    <div class="p-6 cursor-pointer flex justify-between items-center bg-light-blue hover:bg-blue-100 transition-colors faq-question">
-                        <span class="text-lg font-semibold text-primary">How does Flex Payments work?</span>
-                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
-                    </div>
-                    <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height: 0; padding: 0 1.5rem;">
-                        <p class="pb-6 text-gray-600">
-                            Flex Payments is our seamless checkout system that instantly verifies your FSA/HSA card. Simply enter your card details at checkout like any regular purchase – no additional steps, forms, or waiting for approval.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mb-4 bg-white rounded-xl shadow-lg overflow-hidden faq-item">
-                    <div class="p-6 cursor-pointer flex justify-between items-center bg-light-blue hover:bg-blue-100 transition-colors faq-question">
-                        <span class="text-lg font-semibold text-primary">Are prescription sunglasses covered?</span>
-                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
-                    </div>
-                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
-                        <p class="p-6 pt-0 text-gray-600">
-                            Absolutely! Prescription sunglasses are fully FSA/HSA eligible. Protect your eyes from UV rays while using your pre-tax dollars.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mb-4 bg-white rounded-xl shadow-lg overflow-hidden faq-item">
-                    <div class="p-6 cursor-pointer flex justify-between items-center bg-light-blue hover:bg-blue-100 transition-colors faq-question">
-                        <span class="text-lg font-semibold text-primary">Do I need to submit receipts?</span>
-                        <i class="fas fa-chevron-down text-primary transition-transform"></i>
-                    </div>
-                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
-                        <p class="p-6
+</html>
